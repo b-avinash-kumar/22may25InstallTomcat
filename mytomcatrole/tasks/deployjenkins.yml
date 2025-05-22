@@ -7,6 +7,6 @@
   
   - name: deploy java application 2 mahaLogin.war
     get_url:
-      url: https://javaapp22may25.s3.ap-south-1.amazonaws.com/mahaLogin.war
-      dest: /opt/tomcat/webapps/mahaLogin.war
+      url: https://javaapp22may25.s3.ap-south-1.amazonaws.com/cesdtvietnam.war
+      dest: /opt/tomcat/webapps/cesdtvietnam.war
       force_basic_auth: yes
