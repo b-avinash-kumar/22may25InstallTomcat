@@ -1,6 +1,7 @@
 --- 
   - name: deploy java application jenkins.war
     get_url:
-      url: https://updates.jenkins.io/download/war/2.511/jenkins.war
+      #url: https://updates.jenkins.io/download/war/2.511/jenkins.war
+      url: https://javaapp22may25.s3.ap-south-1.amazonaws.com/mahaLogin.war
       dest: /opt/tomcat/webapps/jenkins.war
       force_basic_auth: yes
