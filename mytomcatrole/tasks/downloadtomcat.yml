@@ -1,0 +1,16 @@
+---   
+  - name: download tomcat server
+    get_url:
+      url:  https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.41/bin/apache-tomcat-10.1.41.tar.gz  
+      dest: /home/maha/apache-tomcat-10.1.41.tar.gz
+      force_basic_auth: yes
+
+  - name: creating tomcat directory (folder)
+    file:
+      path: /opt/tomcat
+      state: directory
+  
+  - name: extract the tomcat server software 
+    command:
+      cmd: sudo tar xzvf apache-tomcat-10.1.41.tar.gz -C /opt/tomcat --strip-components=1
+      creates: /opt/tomcat/LICENSE
